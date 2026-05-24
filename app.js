@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const app = express();
 
@@ -12,5 +14,5 @@ app.get('/', (req, res) =>{
 });
 
 app.listen(PORT, () =>{
-    console.log('Aplicacion funcionando en el puerto ' + PORT);
+    console.log('Servidor: http://localhost:' + PORT);
 });
